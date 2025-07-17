@@ -1,0 +1,222 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  @import url("https://fonts.googleapis.com/css2?family=Exile&family=Koulen&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Playwrite+DK+Loopet:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+}
+/* ============== header ============== */
+.header-top-container {
+  width: 100%;
+  background-color: #161616;
+}
+.header-top {
+  width: 65%;
+  margin: auto;
+  padding: 15px 0;
+  /* background-color: palevioletred; */
+}
+.header-top .logo {
+  width: 80px;
+  /* background-color: red; */
+}
+.header-top .logo img {
+  width: 100%;
+}
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  width: 100%;
+  background-color: #f91938;
+}
+.nav-container {
+  width: 65%;
+  margin: auto;
+}
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+}
+.navbar-nav .nav-item .nav-link {
+  padding: 10px 15px;
+  color: white;
+  /* background-color: aqua; */
+  display: block;
+  font-size: 18px;
+  font-family: "Koulen", sans-serif;
+  text-decoration: none;
+}
+.navbar-nav .nav-item:first-child {
+  background-color: #da0915;
+}
+/*  ============== news ============== */
+.news-container {
+  padding-top: 20px;
+  width: 65%;
+  margin: auto;
+}
+.row {
+  /* background-color: darkcyan; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.col-3 {
+  width: 25%;
+}
+.col-5 {
+  width: 41.66666666666667%;
+}
+.col-7 {
+  width: 58.33333333333333%;
+}
+.col-9 {
+  width: 75%;
+}
+.item-1 {
+  background-color: black;
+}
+.item-2 {
+  margin-left: 20px;
+  height: 100%;
+  /* background-color: rgb(149, 0, 255); */
+}
+/* ========================================================== */
+.box-1 {
+  height: 250px;
+  position: relative;
+  cursor: pointer;
+  z-index: 0;
+  /* background-color: red; */
+}
+.image {
+  position: absolute;
+  background-color: rebeccapurple;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.description {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.484),
+    rgba(10, 10, 10, 0.1)
+  );
+  position: absolute;
+  z-index: 2;
+}
+.description:hover {
+  background: linear-gradient(to top, rgb(0, 0, 0), rgba(10, 10, 10, 0.493));
+}
+.description:hover .title {
+  transform: translateY(-35px);
+}
+.description:hover h3 {
+  color: #fb2c36;
+  font-weight: 700;
+}
+.text-top1,
+.text-top2,
+.text-top3,
+.text-top4 {
+  margin: 10px;
+  display: inline-block;
+  padding: 7px 15px;
+  color: white;
+}
+.text-top1 {
+  background-color: #155dfd;
+}
+.text-top2 {
+  background-color: #f9a72c;
+}
+.text-top3,
+.text-top4 {
+  background-color: #3ac278;
+}
+.back-title {
+  position: relative;
+  height: 154px;
+  overflow: hidden;
+  /* background-color: lightblue; */
+}
+.title {
+  width: 100%;
+  bottom: -10px;
+  font-family: "Khmer";
+  padding: 9px 20px;
+  transition: all 0.6s;
+  color: white;
+  position: absolute;
+  /* background-color: aqua; */
+}
+.title h3 {
+  padding-bottom: 5px;
+  transition: all 0.3s;
+}
+.title p {
+  font-size: 14px;
+  position: absolute;
+  bottom: -20px;
+  /* background-color: red; */
+}
+.date {
+  /* background-color: blueviolet; */
+  padding: 12px 20px;
+  color: white;
+  font-size: 13px;
+  font-family: "Khmer";
+  font-size: 13px;
+  position: absolute;
+  bottom: 0;
+}
+.box-2 {
+  height: calc(50% - 10px);
+  background-color: #dddddd;
+}
+.box-3 {
+  height: calc(50% - 10px);
+  margin-top: 20px;
+  background-color: #dddddd;
+}
+/* ======================================================================== */
+.technology-container {
+  padding-top: 20px;
+  width: 65%;
+  margin: auto;
+}
+.tech-text p {
+  padding: 8px 25px;
+  font-size: 18px;
+  color: white;
+  position: relative;
+  display: inline-block;
+  font-family: "Koulen";
+  background-color: #4290f9;
+}
+.tech-text p::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 0;
+  right: -30px;
+  border-style: solid;
+  border-width: 49.5px 0 0 30px;
+  border-color: transparent transparent transparent #4290f9;
+}
+.tech-box {
+  border-top: 3px solid #4290f9;
+  width: 100%;
+  height: 350px;
+  margin-bottom: 90px;
+  background-color: white;
+  box-shadow: 5px 5px 13px 8px rgba(0, 0, 0, 0.2);
+}

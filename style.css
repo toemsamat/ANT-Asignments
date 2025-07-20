@@ -9,7 +9,7 @@ header {
   color: var(--color-fg);
 }
 .header-container {
-  width: 1200px;
+  width: 1300px;
   margin: auto;
   padding: 25px 0;
   display: flex;
@@ -87,7 +87,7 @@ header {
   color: var(--btn-dark-mode);
 }
 .information-area {
-  width: 1200px;
+  width: 1300px;
   margin: auto;
   padding: 50px 0;
 }

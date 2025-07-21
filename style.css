@@ -43,10 +43,14 @@ header {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
+  transition: all 0.3s;
   background-color: var(--icon-bg);
   font-size: 23px;
   text-decoration: none;
   color: white;
+}
+.profile-information ul li a:hover {
+  transform: scale(1.2);
 }
 .profile-information p {
   padding: 10px 0;
@@ -55,7 +59,7 @@ header {
   padding: 0 20px;
   text-align: center;
 }
-.dark-mode div {
+.dark-mode .dark-mode-group {
   font-family: "Roboto", sans-serif;
   display: flex;
   padding: 5px 0;
@@ -64,7 +68,7 @@ header {
 }
 
 .dark-mode .btn-contact {
-  padding: 9px 12px;
+  padding:  12px;
   background-color: #54bb4d;
   color: white;
   text-transform: uppercase;
@@ -73,6 +77,11 @@ header {
   font-weight: 600;
   border-radius: 5px;
 }
+.dark-mode .btn-contact:hover{
+  background-color: #42b33a;
+  transform: scale(1.01);
+}
+
 .dark-mode .btn-contact i {
   padding-right: 5px;
 }
@@ -112,7 +121,7 @@ header {
 }
 .about-me,
 .project,
-.location,
+.address,
 .skill,
 .test,
 .education,
@@ -126,7 +135,7 @@ header {
 }
 .about-me h2,
 .project h2,
-.location p,
+.address p,
 .skill h2,
 .test h2,
 .education h2,
@@ -172,22 +181,32 @@ header {
   transform: rotate(45deg);
 }
 
-.project-news-description h3 {
+.project-news-description h3 a {
+  display: block;
+  text-decoration: none;
+  color: var(--a-color);
   padding: 15px 0;
   text-align: center;
 }
 .project-news-description .btn {
+  
   margin-top: 30px;
   text-align: center;
 }
 .project .project-news .project-news-description .btn button {
-  padding: 9px 12px;
+  padding: 12px;
   border: none;
+  cursor: pointer;
   color: white;
   border-radius: 5px;
   font-weight: bold;
+  transition: all 0.5s;
   text-transform: uppercase;
   background-color: #499fc8;
+}
+.project .project-news .project-news-description .btn button:hover{
+  background-color: #3083a9;
+  transform: scale(1.01);
 }
 .project .project-news .project-news-description .btn button i {
   padding-right: 5px;
@@ -202,8 +221,11 @@ header {
   height: 100%;
   display: block;
 }
-.project-list-description h3 {
-  padding: 15px 0;
+.project-list-description h3 > a {
+  display: inline-block;
+  text-decoration: none;
+  padding-bottom: 15px;
+  color: var(--a-color);
 }
 .project-list-description p {
   font-size: 15px;
@@ -211,31 +233,44 @@ header {
 .px-15 {
   padding: 0 15px;
 }
-.project-list-description a,
+.project-list-description > a,
 .skill .progressbar-container a,
 .test > a {
+  transition: all 0.3s;
   font-size: 14px;
   padding: 10px 0;
-  display: block;
+  margin-top: 5px;
+  display: inline-block;
   text-decoration: none;
   color: #54bb4d;
 }
-.project-list-description a i,
+.project-list-description > a:hover,
+.skill .progressbar-container a:hover,
+.test > a:hover {
+  font-size: 14px;
+  padding: 10px 0;
+  display: inline-block;
+  text-decoration: none;
+  color: #54bb4d;
+  transform: translateY(-5px);
+}
+.project-list-description > a i,
 .skill .progressbar-container a i,
 .test a i,
 .education div h4 i {
+  display: inline-block;
   padding-right: 5px;
 }
-.location a {
+.address a {
   color: var(--a-color);
   text-decoration: none;
 }
-.location p:nth-child(2) a,
-.location p:nth-child(3) a {
+.address p:nth-child(2) a,
+.address p:nth-child(3) a {
   color: #54bb4d;
 }
 
-.location p a i {
+.address p a i {
   color: var(--a-color);
   padding: 0 5px;
 }
@@ -347,7 +382,6 @@ footer p {
 /* dark mode */
 
 [data-theme="light"] {
-  --test-a-color: orange;
   --icon-bg: #afb7c0;
   --footer-bg: #000000;
   --color-bg: #dae3e7;

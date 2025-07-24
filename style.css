@@ -183,7 +183,7 @@ body {
   width: 100%;
   height: 100%;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1440px) {
   .news-container {
     margin-inline: 20px;
   }
